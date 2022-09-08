@@ -2,12 +2,6 @@ import tkinter.messagebox as msgbox
 import os.path as os
 import yaml
 
-# 순서를 생각해보자
-# 1. 폴더 경로를 불러왔어.
-# 2. 여기서, yml 파일을 불러와야 해. (근데 yml 파일이 다 있는지? 확인을 해볼 필요가있지)
-# 3. if 를 사용해서 파일 존재여부를 확인했어. 그럼 다음은?
-# 4. yml 파일 불러오고, ID, Aegis, Name 만 추출해서 CSV 로 저장해야지.
-
 def yml_to_csv(dir):
     # 폴더 내 파일 체크 변수
     equip_check = os.isfile(dir + 'item_db_equip.yml')
