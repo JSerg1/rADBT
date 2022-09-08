@@ -1,9 +1,8 @@
 # rADBT
-rADBT is rAthena Database Translating program. This program maked to need 
+rADBT is rAthena Database Translating program.
 
-1. YML to CSV ?
-It is extract ID, AegisName, Name from yml file in rAthena\db\re folder, 
-and make CSV file
+## 1. YML to CSV ?
+It is extract ID, AegisName, Name from yml file in rAthena\db\re folder, and make CSV file.
 It just process make comfortable for me.
 
  - Target yml file list
@@ -18,3 +17,6 @@ It just process make comfortable for me.
  100, A, A,,,
  101, B, B,,,
  ...
+
+ ## 2. Translate YML ?
+ 
