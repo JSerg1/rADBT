@@ -15,6 +15,8 @@ def yml_to_csv(dir):
     item_check = os.isfile(dir + 'item_db.yml')
     usabe_check = os.isfile(dir + 'item_db_usable.yml')
     mob_check = os.isfile(dir + 'mob_db.yml')
+    
+    comp_val = 0
 
     # item_db_equip.yml 파일 존재 체크 및 csv 변환
     if equip_check:
@@ -35,6 +37,7 @@ def yml_to_csv(dir):
                 equip_csv.write(str(equip_id_val) + ',' + str(equip_Aegis_val) + ',' + str(equip_Name_val) + '\n')
             
             equip_csv.close()
+            comp_val += 1
     else:
         print("item_db_equip 파일 없음")
 
@@ -57,6 +60,7 @@ def yml_to_csv(dir):
                 etc_csv.write(str(etc_id_val) + ',' + str(etc_Aegis_val) + ',' + str(etc_Name_val) + '\n')
             
             etc_csv.close()
+            comp_val += 1
     else:
         print("item_db_etc 파일 없음")
 
@@ -80,6 +84,7 @@ def yml_to_csv(dir):
                     db_csv.write(str(db_id_val) + ',' + str(db_Aegis_val) + ',' + str(db_Name_val) + '\n')
             
                 db_csv.close()
+                comp_val += 1
             else:
                 print("item_db는 있으나, Body 해쉬 없음")
     else:
@@ -104,6 +109,7 @@ def yml_to_csv(dir):
                 usable_csv.write(str(usable_id_val) + ',' + str(usable_Aegis_val) + ',' + str(usable_Name_val) + '\n')
             
             usable_csv.close()
+            comp_val += 1
     else:
         print("item_db_usable 파일 없음")
 
@@ -126,7 +132,9 @@ def yml_to_csv(dir):
                 mob_csv.write(str(mob_id_val) + ',' + str(mob_Aegis_val) + ',' + str(mob_Name_val) + '\n')
             
             mob_csv.close()
+            comp_val += 1
     else:
         print("mob_db 파일 없음")
 
-    msgbox.showinfo("Complite", "CSV 파일로 변환이 완료되었습니다.")
+
+    msgbox.showinfo("Complite", str(comp_val) + "개의 yml 파일이 CSV 파일로 변환이 완료되었습니다.")
