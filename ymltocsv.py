@@ -11,7 +11,7 @@
 # 101, B, B
 # ...
 
-
+import os
 from tkinter import *
 from tkinter import filedialog
 from ymltocsv_func import yml_to_csv

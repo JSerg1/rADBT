@@ -87,12 +87,12 @@ def yml_to_csv(dir):
     # item_db_usable.yml 파일 존재 체크 및 csv 변환
     if usabe_check:
         print("item_db_usable 파일 존재 확인")
-        with open(dir + 'item_db_etc.yml') as usable:
+        with open(dir + 'item_db_usable.yml') as usable:
             usable_val = yaml.load(usable, Loader=yaml.FullLoader)
             usable_body = list(usable_val['Body'])
             usable_body_lenth = len(usable_body)
             
-            usable_csv = open(dir + 'item_db_usable.csv', "w", encoding="UTF-8")
+            usable_csv = open(dir + 'item_db_usable.csv', "w")
             usable_csv.write('ID' + ',' + 'AeigsName' + ',' + 'Name' + ',' + 'Trans_AeigsName' + ',' + 'Trans_Name' + '\n')
             
             for i in range(usable_body_lenth):
