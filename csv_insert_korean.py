@@ -1,4 +1,18 @@
-import os
+# 2번 프로그램
+# 해당 프로그램은, 구버젼 서버파일에서 한글화된 db 파일을 사용하여
+# ID , 영문AegisName , 영문ItemName , 한글AegisName , 한글ItemName 양식의 CSV 파일을 만들어주는 프로그램임.
+
+# 해당 프로그램으로 만들어진 CSV 파일을 바탕으로,
+# 이 다음 프로그램에서 rAthena/db/re 폴더 내
+# item_db 와 mob_db가 참조되는 모든 yml 파일의 명칭을
+# 영문AegisName -> 한글AegisName
+# 영문ItemName -> 한글ItemName 으로 바꿔줌.
+
+# 주의
+# Input 되는 구버젼 한글 db 파일은 확장자를 txt -> csv 로 변경 후
+# 엑셀에서 ID, AegisName, ItemName 열만 남기고 다른 데이터는 삭제후
+# 넣어줘야 함
+
 from tkinter import *
 from tkinter import filedialog
 import tkinter.messagebox as msgbox

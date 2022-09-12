@@ -1,17 +1,21 @@
+# 해당 프로그램은 rAthena 서버파일
+# rAthena\db\re 폴더의 db 파일인 yml 파일에서
+# ID, AegisNAme, Name 항목만 추출하여 CSV 파일로 만들어주는 프로그램임
+#
 # This program is extract ID, AegisName, Name from yml file 
 # in rAthena\db\re folder, And make .CSV file
+########################################################################
+# Target yml file:
+# item db : item_db, item_db_equip, item_db_etc, item_db_usable
+# etc db : mob_db
 #
-# Target yml file list
-# item_db, item_db_equip, item_db_etc, item_db_usable
-# mob_db
-#
-# Output csv file form
+# Output csv file form:
 # ID, AegisName, Name
-# 100, A, A
-# 101, B, B
+# 100, A, A, , ,
+# 101, B, B, , ,
 # ...
 
-import os
+
 from tkinter import *
 from tkinter import filedialog
 from ymltocsv_func import yml_to_csv
