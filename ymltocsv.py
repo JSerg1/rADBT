@@ -1,7 +1,9 @@
+# 1번 프로그램
 # 해당 프로그램은 rAthena 서버파일
 # rAthena\db\re 폴더의 db 파일인 yml 파일에서
 # ID, AegisNAme, Name 항목만 추출하여 CSV 파일로 만들어주는 프로그램임
 #
+# First program.
 # This program is extract ID, AegisName, Name from yml file 
 # in rAthena\db\re folder, And make .CSV file
 ########################################################################
