@@ -8,11 +8,6 @@
 # 영문AegisName -> 한글AegisName
 # 영문ItemName -> 한글ItemName 으로 바꿔줌.
 
-# 주의
-# Input 되는 구버젼 한글 db 파일은 확장자를 txt -> csv 로 변경 후
-# 엑셀에서 ID, AegisName, ItemName 열만 남기고 다른 데이터는 삭제후
-# 넣어줘야 함
-
 from tkinter import *
 from tkinter import filedialog
 import tkinter.messagebox as msgbox
